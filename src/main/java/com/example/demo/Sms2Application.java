@@ -14,14 +14,5 @@ public class Sms2Application {
 		SpringApplication.run(Sms2Application.class, args);
 	}
 	
-	@Autowired
-	BookRepository brep;
 	
-	public void run(String... args) throws Exception {
-		book b1=new book("kangal thedi","author","2000");
-		brep.save(b1);
-		
-		
-		
-	}
 }

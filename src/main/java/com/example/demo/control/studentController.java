@@ -42,7 +42,7 @@ public class studentController {
 		return new ModelAndView("bookList","book",list);
 	}
 	@PostMapping("/save")
-	public String addBooking(Model model, @ModelAttribute book b) {
+	public String addBooking( @ModelAttribute book b) {
 		service.saveData(b);
 		return "redirect:/available_book";
 	}
